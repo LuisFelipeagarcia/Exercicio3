@@ -166,6 +166,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Testando\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -192,7 +193,7 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <Target Name="CopyRoslynFiles" AfterTargets="AfterBuild" >
+  <Target Name="CopyRoslynFiles" AfterTargets="AfterBuild">
     <ItemGroup>
       <RoslynFiles Include="$(SolutionDir)packages\Microsoft.Net.Compilers.1.1.1\tools\*" />
     </ItemGroup>
